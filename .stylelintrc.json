@@ -1,0 +1,47 @@
+{
+	"extends": [
+		"stylelint-config-standard-scss",
+		"stylelint-config-html/svelte",
+		"stylelint-config-html/astro",
+		"stylelint-config-prettier-scss"
+	],
+	"plugins": ["stylelint-order"],
+	"rules": {
+		"at-rule-empty-line-before": null,
+		"at-rule-no-unknown": [
+			true,
+			{
+				"ignoreAtRules": [
+					"at-root",
+					"content",
+					"each",
+					"else",
+					"extend",
+					"for",
+					"function",
+					"if",
+					"import",
+					"include",
+					"mixin",
+					"return"
+				]
+			}
+		],
+		"block-closing-brace-newline-after": "always-single-line",
+		"declaration-colon-space-after": "always-single-line",
+		"declaration-empty-line-before": "never",
+		"font-family-name-quotes": "always-where-recommended",
+		"function-url-quotes": "always",
+		"no-descending-specificity": null,
+		"order/order": [["dollar-variables", "at-rules", "declarations"]],
+		"order/properties-alphabetical-order": true,
+		"selector-list-comma-newline-after": "always",
+		"selector-pseudo-class-no-unknown": [
+			true,
+			{ "ignorePseudoClasses": ["global"] }
+		],
+		"string-quotes": "single",
+		"property-no-vendor-prefix": null,
+		"color-function-notation": "modern"
+	}
+}
